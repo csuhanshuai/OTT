@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#dddddd"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/head_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/marging_8"
+            android:src="@drawable/head"/>
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/orderservice_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/notepad"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Order Service"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/parentalcontrol_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/mu_pressed"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Parental Control"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_gray"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mydevice_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/device"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="My Device"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/download_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/download"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Download"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/myfavorite_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/collect2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="My Favorite"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setting_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/setup2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Setting"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

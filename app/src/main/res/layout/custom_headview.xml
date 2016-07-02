@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioGroup
+            android:id="@+id/rg_demand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tv_demand_movie"
+                style="@style/demand_text2"
+                android:checked="true"
+                android:text="@string/hotest"/>
+
+            <RadioButton
+                android:id="@+id/tv_demand_tv"
+                style="@style/demand_text2"
+                android:layout_toRightOf="@+id/tv_demand_movie"
+                android:text="@string/tobeoffline"/>
+
+            <RadioButton
+                android:id="@+id/tv_demand_sport"
+                style="@style/demand_text2"
+                android:layout_toRightOf="@+id/tv_demand_tv"
+                android:text="@string/ranking"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#50666666"></ImageView>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/tv_demand_filter"
+        style="@style/demand_text"
+        android:layout_alignParentRight="true"
+        android:text="filter"
+        android:visibility="gone"/>
+</merge>
+    <!--<item name="android:drawableBottom">@drawable/line_selector</item>-->

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/head_title"></include>
+
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et1_product_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter a subsc ription password"
+            android:singleLine="true"
+            android:textColor="@color/color_gray"
+            android:textColorHint="@color/color_gray"/>
+
+        <EditText
+            android:id="@+id/et2_product_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et1_product_list"
+            android:hint="Confirm the subsc ription password"
+            android:singleLine="true"
+            android:textColor="@color/color_gray"
+            android:textColorHint="@color/color_gray"/>
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/color_green"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Buy"/>
+    </RelativeLayout>
+
+</LinearLayout>

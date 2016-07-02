@@ -1,0 +1,65 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                style="@style/radio"
+                android:drawableTop="@drawable/tv_selector"
+                android:text="@string/m_mytv"/>
+
+            <RadioButton
+                android:id="@+id/radio1"
+                style="@style/radio"
+                android:drawableTop="@drawable/reco_selector"
+                android:text="@string/m_recom"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                style="@style/radio"
+                android:drawableTop="@drawable/live_selector"
+                android:text="@string/m_live"/>
+
+            <RadioButton
+                android:id="@+id/radio3"
+                style="@style/radio"
+                android:drawableTop="@drawable/demand_selector"
+                android:text="@string/m_demand"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.huawei.ott.widget.DispatchRelativeLayout
+        android:id="@+id/dprl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        layout="@layout/dialog_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

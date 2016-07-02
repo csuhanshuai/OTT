@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OTT.iml" filepath="$PROJECT_DIR$/OTT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaapkcomMyCalendar/javaapkcomMyCalendar.iml" filepath="$PROJECT_DIR$/javaapkcomMyCalendar/javaapkcomMyCalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ottvideo/ottvideo.iml" filepath="$PROJECT_DIR$/ottvideo/ottvideo.iml" />
+    </modules>
+  </component>
+</project>

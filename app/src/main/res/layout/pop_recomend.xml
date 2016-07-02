@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tv_hot"
+            android:checked="true"
+            style="@style/demand_text"
+            android:text="Hot"/>
+
+        <RadioButton
+            android:id="@+id/tv_latest"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_hot"
+            android:text="Latest"/>
+
+        <RadioButton
+            android:id="@+id/tv_top"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_latest"
+            android:text="Top"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tv_all_type"
+            style="@style/demand_text"
+            android:checked="true"
+            android:text="All Type"/>
+
+        <RadioButton
+            android:id="@+id/tv_love"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_all_type"
+            android:text="love"/>
+
+        <RadioButton
+            android:id="@+id/tv_action"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_love"
+            android:text="Action"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/tv_all_area"
+            style="@style/demand_text"
+            android:text="All Area"/>
+
+        <RadioButton
+            android:id="@+id/tv_china"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_all_area"
+            android:text="China"/>
+
+        <RadioButton
+            android:id="@+id/tv_usa"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_china"
+            android:text="USA"/>
+
+        <RadioButton
+            android:id="@+id/tv_england"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_usa"
+            android:text="England"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tv_all_year"
+            style="@style/demand_text"
+            android:checked="true"
+            android:text="All Year"/>
+
+        <RadioButton
+            android:id="@+id/tv_2015"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_all_year"
+            android:text="2015"/>
+
+        <RadioButton
+            android:id="@+id/tv_2014"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_2015"
+            android:text="2014"/>
+
+        <RadioButton
+            android:id="@+id/tv_2013"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_2014"
+            android:text="2013"/>
+
+        <RadioButton
+            android:id="@+id/tv_2012"
+            style="@style/demand_text"
+            android:layout_toRightOf="@+id/tv_2013"
+            android:text="2012"/>
+    </RadioGroup>
+</LinearLayout>

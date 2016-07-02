@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.huawei.ottvideo.OttVideoView
+            android:id="@+id/ovv_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <ImageView
+            android:id="@+id/back_finish"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/marging_8"
+            android:padding="5dp"
+            android:src="@drawable/back_normal"/>
+    </FrameLayout>
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:id="@+id/hs_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:id="@+id/rg_day"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_16"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed 16/11"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_17"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 17/11"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_18"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 18/11"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_19"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 19/11"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_20"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 20/11"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_21"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 21/11"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:checked="true"
+                android:id="@+id/tv_program_today"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Today"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_tomorrow"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Today"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_tomorrow1"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Today"
+                />
+
+            <RadioButton
+                android:padding="10dp"
+                android:id="@+id/tv_program_tomorrow2"
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Today"
+                />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_gray">
+
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Today (SUN)"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_program"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progressbar_sweep"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="NO Data"/>
+    </LinearLayout>
+</LinearLayout>

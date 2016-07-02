@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_head"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/head_height"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_marginLeft="16dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/huaweilogo"/>
+
+   <!--<ImageView-->
+        <!--android:id="@+id/iv_head_search"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="28dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/search_button"-->
+        <!--/>-->
+    <LinearLayout
+        android:id="@+id/iv_head_search"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_frame_shape"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search1"
+            />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/ib_category"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/category"
+        />
+
+    <ImageView
+        android:id="@+id/ib_download"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/download_normal"
+        />
+
+</LinearLayout>

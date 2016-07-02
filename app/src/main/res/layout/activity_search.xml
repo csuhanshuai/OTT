@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huawei.ott.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="#202020"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:background="@drawable/search_frame_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:src="@drawable/search1"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/Auto_AssKey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:hint="Input keyword to search"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textColor="@color/color_gray"
+                android:textColorHint="@color/color_gray"
+                android:textCursorDrawable="@drawable/editcursor_shape"/>
+
+            <!--<EditText-->
+            <!--android:id="@+id/Auto_AssKey"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="10"-->
+            <!--android:background="@null"-->
+            <!--android:hint="Input keyword to search"-->
+            <!--android:textSize="14sp"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@color/color_gray"-->
+            <!--android:textColorHint="@color/color_gray"-->
+            <!--android:textCursorDrawable="@drawable/editcursor_shape"-->
+            <!--/>-->
+
+
+            <ImageView
+                android:id="@+id/keyword_delete_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@drawable/keyword_delete"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#5D5D5D"/>
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="#5D5D5D"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ListView
+            android:id="@+id/result_list"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/fl_autokeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/empty"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:text="No Result Found"/>
+            <ListView
+                android:id="@+id/lv_autokeyword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="#00000000"
+                android:background="@drawable/item_selector"
+                ></ListView>
+        </FrameLayout>
+        <include
+            layout="@layout/activity_search_pre"></include>
+
+    </FrameLayout>
+
+</LinearLayout>

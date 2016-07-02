@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed 16/11"
+                />
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 17/11"
+                />
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 18/11"
+                />
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 19/11"
+                />
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 20/11"
+                />
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Wed 21/11"
+                />
+
+            <RadioButton
+                style="@style/demand_text3"
+                android:background="@drawable/jishu_selector"
+                android:id="@+id/tv_channel_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Today"
+                />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_gray">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Today (SUN)"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_channel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>
+</LinearLayout>

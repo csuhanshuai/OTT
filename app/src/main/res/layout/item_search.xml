@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="15dp"
+              android:paddingTop="15dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/cover_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_empty_page"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/marging_8"
+        android:paddingRight="@dimen/marging_8">
+
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color_gray"
+            />
+
+        <TextView
+            android:id="@+id/title_textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/title_textview"
+            android:text="8.5"
+            android:textColor="#FE7201"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/director_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_textview"
+            android:text="Director:"
+            android:textColor="@color/color_gray"
+            />
+
+        <TextView
+            android:id="@+id/director_textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_textview"
+            android:layout_marginLeft="55dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Director2"
+            android:textColor="@color/color_gray"
+            />
+
+        <TextView
+            android:id="@+id/actor_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/director_textview"
+            android:text="Actor:"
+            android:textColor="@color/color_gray"
+            />
+
+        <TextView
+            android:id="@+id/actor_textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/director_textview"
+            android:layout_marginLeft="40dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Actor2"
+            android:textColor="@color/color_gray"
+            />
+
+        <TextView
+            android:id="@+id/release_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actor_textview"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Release:"
+            android:textColor="@color/color_gray"
+            />
+
+        <TextView
+            android:id="@+id/release_textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actor_textview"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="4dp"
+            android:text="Release2"
+            android:textColor="@color/color_gray"
+            />
+
+        <Button
+            android:id="@+id/watch_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/marging_8"
+            android:layout_below="@id/release_textview"
+            android:background="@drawable/search_item_bt_bg"
+            android:text="Watch"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+</LinearLayout>

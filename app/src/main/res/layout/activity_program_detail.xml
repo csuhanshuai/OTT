@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/yu"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/marging_8">
+
+        <TextView
+            android:id="@+id/tv_move_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="host carts"
+            android:textColor="@color/color_green"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_move_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_move_name"
+            android:text="8.5"
+            android:textColor="#FE7201"/>
+
+        <CheckBox
+            android:id="@+id/cb_zhan"
+            style="@style/radio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/zhan_selector"/>
+
+        <CheckBox
+            android:id="@+id/cb_love"
+            style="@style/radio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/cb_zhan"
+            android:background="@drawable/heart_selector"/>
+
+        <CheckBox
+            android:id="@+id/cb_share"
+            style="@style/radio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/cb_love"
+            android:background="@drawable/share_selector"/>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/el_program_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ExpandableListView>
+</LinearLayout>

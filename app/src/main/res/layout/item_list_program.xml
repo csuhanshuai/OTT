@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_catch_up"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_gray"
+            android:id="@+id/tv_program_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="23:00"/>
+
+        <TextView
+            android:textColor="@color/color_gray"
+            android:id="@+id/tv_program_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="BBC News"/>
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:id="@+id/iv_program_item_program"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/playback"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

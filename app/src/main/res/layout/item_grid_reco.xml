@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_mv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_reco_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_error_page"/>
+
+        <TextView
+            android:id="@+id/tv_scroe"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#80000000"
+            android:gravity="center"
+            android:textColor="@color/ottYellow"
+            android:textSize="17sp"
+            tools:text="5"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_reco_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:animateLayoutChanges="true"
+        android:singleLine="true"
+        android:textColor="@color/ottGray"
+        android:textSize="@dimen/item_text"
+        tools:text="cehischihih"/>
+</LinearLayout>

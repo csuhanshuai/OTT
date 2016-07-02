@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huawei.ott.IndividualRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single/Series Setting"
+            android:textColor="@color/color_green"
+            />
+
+        <ListView
+            android:id="@+id/program_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_header_hight"></ListView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/down"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Setting"
+            android:textColor="@color/color_green"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Time"
+                android:textColor="@color/ottGray"/>
+
+            <TextView
+                android:id="@+id/starttime_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/marging_8"
+                android:text="00:00"
+                android:textColor="@color/ottGray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Time"
+                android:textColor="@color/ottGray"/>
+
+            <TextView
+                android:id="@+id/endtime_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/right"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/marging_8"
+                android:text="00:00"
+                android:textColor="@color/ottGray"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeated Setting"
+            android:textColor="@color/color_green"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day:"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/mon_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:checked="true"
+                android:padding="@dimen/grid_hspacing"
+                android:text="MON"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/tue_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:padding="@dimen/grid_hspacing"
+                android:text="TUE"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/wed_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:padding="@dimen/grid_hspacing"
+                android:text="WED"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/thu_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:padding="@dimen/grid_hspacing"
+                android:text="THU"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/fri_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:padding="@dimen/grid_hspacing"
+                android:text="FRI"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/sat_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:padding="@dimen/grid_hspacing"
+                android:text="SAT"
+                android:textColor="@color/ottGray"/>
+
+            <CheckBox
+                android:id="@+id/sun_checkbox"
+                style="@style/day_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/grid_hspacing"
+                android:background="@drawable/day_checkbox_selector"
+                android:padding="@dimen/grid_hspacing"
+                android:text="SUN"
+                android:textColor="@color/ottGray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_height"
+                android:background="@android:color/white"
+                android:text="OK"
+                android:textColor="@color/ottGray"/>
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginLeft="@dimen/item_height"
+                android:background="@color/color_green"
+                android:text="Cancel"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/check_recording_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_green"
+        android:gravity="center"
+        android:text="Check Recording Files →"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

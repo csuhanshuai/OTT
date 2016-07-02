@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_6"
+            style="@style/demand_text3"
+            android:text="6"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_7"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_6"
+            android:text="7"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_8"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_7"
+            android:text="8"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_9"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_8"
+            android:text="9"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_10"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_9"
+            android:text="10"/>
+
+    </RadioGroup>
+</LinearLayout>

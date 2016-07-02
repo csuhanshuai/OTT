@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202020</color>
+    <color name="colorPrimaryDark">#202020</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_deepgreen">#8085C210</color>
+    <color name="color_green">#85C210</color>
+    <color name="ottBlack">#202020</color>
+    <color name="ottGray">#666666</color>
+    <color name="ottBlue">#6bb0e8</color>
+    <color name="color_gray">#666666</color>
+    <color name="color_item">#eeeeee</color>
+    <color name="lightGray">#cccccc</color>
+    <color name="endColor">#B3B4B4</color>
+    <color name="ottYellow">#FE7201</color>
+    <color name="tran_gray">#333333</color>
+</resources>

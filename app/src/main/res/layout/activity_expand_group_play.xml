@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/rg_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_1"
+            style="@style/demand_text3"
+            android:text="1"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_2"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_1"
+            android:text="2"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_3"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_2"
+            android:text="3"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_4"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_3"
+            android:text="4"/>
+
+        <RadioButton
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_5"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_4"
+            android:text="5"/>
+
+        <RadioButton
+            android:clickable="false"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/jishu_selector"
+            android:id="@+id/tv_shenglve"
+            style="@style/demand_text3"
+            android:layout_toRightOf="@id/tv_5"
+            android:text="..."/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center">
+
+        <ImageView
+            android:gravity="center"
+            android:id="@+id/iv_play_ep_group"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

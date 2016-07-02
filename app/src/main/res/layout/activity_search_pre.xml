@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_search_pre"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/search_record_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/keywords_frame_shape"
+        >
+
+        <TextView
+            android:id="@+id/tv_search_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marging_8"
+            android:text="Search Record"
+            android:textColor="@color/color_green"/>
+
+        <TextView
+            android:id="@+id/clear_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/marging_8"
+            android:onClick="onClick"
+            android:text="Clear Record"
+            android:textColor="@color/ottYellow"/>
+
+        <View
+            android:id="@+id/cutoff_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_search_record"
+            android:layout_marginLeft="@dimen/marging_8"
+            android:layout_marginRight="@dimen/marging_8"
+            android:background="@color/lightGray"
+            />
+
+        <GridView
+            android:id="@+id/gv_search_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cutoff_line1"
+            android:layout_margin="@dimen/marging_8"
+            android:paddingBottom="@dimen/marging_8"
+            android:horizontalSpacing="@dimen/grid_hspacing"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/grid_hspacing">
+        </GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_hot_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_record_rl"
+        android:layout_margin="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/keywords_frame_shape"
+        >
+
+        <TextView
+            android:id="@+id/tv_hot_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marging_8"
+            android:text="Hot Search"
+            android:textColor="@color/color_green"/>
+
+        <View
+            android:id="@+id/cutoff_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_hot_search"
+            android:layout_marginLeft="@dimen/marging_8"
+            android:layout_marginRight="@dimen/marging_8"
+            android:background="@color/lightGray"
+            />
+
+        <GridView
+            android:id="@+id/gv_search_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cutoff_line2"
+            android:paddingBottom="@dimen/marging_8"
+            android:layout_margin="@dimen/marging_8"
+            android:horizontalSpacing="@dimen/grid_hspacing"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/grid_hspacing">
+        </GridView>
+    </RelativeLayout>
+</RelativeLayout>

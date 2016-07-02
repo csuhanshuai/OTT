@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">OTT</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing username completions."</string>
+    <string name="rec_movie">Movie</string>
+    <string name="rec_more">More</string>
+    <string name="m_mytv">My TV</string>
+    <string name="m_recom">Recommend</string>
+    <string name="m_live">Live TV</string>
+    <string name="m_demand">On Demand</string>
+    <string name="head_mytv">My TV</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="login">Login</string>
+    <string name="remember">Remember Me</string>
+    <string name="hotest">Hottest</string>
+    <string name="tobeoffline">To Be Offline</string>
+    <string name="ranking">Rankings</string>
+    <string name="channel">Channel</string>
+    <string name="download">Download</string>
+    <string name="productList">Product List</string>
+    <string name="unknow">Unknow</string>
+    <string name="exit">Confirm Exit?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+</resources>
